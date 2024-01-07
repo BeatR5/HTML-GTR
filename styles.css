@@ -1,0 +1,118 @@
+/* General */
+* {
+  box-sizing: border-box;
+ }
+ 
+ body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+ }
+ 
+ /* Header */
+ header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+ }
+ 
+ header img {
+  max-width: 200px;
+  max-height: 200px;
+  margin-right: 20px;
+ }
+ 
+ header h1 {
+  margin: 0 auto;
+  padding-right: 14%;
+ }
+ 
+ /* Nav */
+ nav {
+  background-color: deepskyblue;
+  color: #fff;
+  padding: 10px 0;
+  width: 100%;
+ }
+ 
+ nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+ }
+ 
+ nav ul li {
+  display: inline;
+  margin-right: 20px;
+ }
+ 
+ nav ul li a {
+  text-decoration: none;
+  color: #fff;
+ }
+ 
+ nav ul li a:hover {
+  color: #AAAAAA;
+ }
+ 
+ /* Main Content */
+ .container {
+  display: flex;
+ }
+ 
+ .main-content {
+  width: 70%;
+  padding: 20px;
+ }
+ 
+ section, article {
+  padding: 20px;
+  margin: 0 0 20px 0;
+  border: 1px solid #ccc;
+  background-color: dodgerblue;
+ }
+ 
+ /* Sidebar */
+ aside {
+  width: 30%;
+  background-color: whitesmoke;
+  padding: 20px;
+  text-align: center;
+  color: slategray;
+ }
+ 
+ /* Footer */
+ footer {
+  background-color: #333;
+  color: wheat;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+ }
+ 
+ /* Table */
+ table {
+  font-family: 'Courier New', Courier, monospace;
+  border-collapse: collapse;
+  width: 100%;
+  color: bisque;
+ }
+ 
+ th, td {
+  border: 1px solid deepskyblue;
+  text-align: center;
+  padding: 8px;
+  font-style: oblique;
+  list-style: circle;
+ }
+ 
+ tr:nth-child(even) {
+  background-color: dodgerblue;
+ }
+ 
+ .car-table {
+  margin-bottom: 2rem;
+ }
+ 
