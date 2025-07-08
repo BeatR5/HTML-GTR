@@ -5,8 +5,6 @@
 :root {
     --color-primary: #00aaff;
     --color-primary-dark: #0077cc;
-    --color-accent-hotspot: #ff9d00;
-    --color-accent-hotspot-dark: #cc7e00;
     --color-background: #101214;
     --color-background-panel: #181A1C;
     --color-background-card: #1F2124;
@@ -425,32 +423,63 @@ aside img {
     cursor: pointer;
     transform: translate(-50%, -50%);
     z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* YENİ EKLENDİ: Hafif gölge efekti */
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
 }
 .hotspot-pulse {
     width: 100%; height: 100%;
-    background-color: var(--color-accent-hotspot);
+    background-color: var(--color-text-heading);
     border-radius: 50%;
-    animation: pulse-orange 2s infinite;
+    animation: pulse-white 2s infinite;
     transition: background-color 0.3s ease;
 }
 .hotspot:hover .hotspot-pulse {
-    background-color: var(--color-accent-hotspot-dark);
+    background-color: var(--color-text);
     animation-play-state: paused;
 }
-@keyframes pulse-orange {
+.hotspot-label {
+    position: absolute;
+    left: 150%;
+    transform: translateY(-50%);
+    top: 50%;
+    padding: var(--spacing-s) var(--spacing-m);
+    background-color: rgba(16, 18, 20, 0.7);
+    backdrop-filter: blur(5px);
+    color: white;
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: var(--spacing-s);
+    white-space: nowrap;
+    pointer-events: none;
+    border: 1px solid var(--color-border);
+    animation: fadeInLabels 1s 1s ease forwards;
+    opacity: 0.85; /* Hafif şeffaf */
+}
+
+@keyframes pulse-white {
     0% {
         transform: scale(0.95);
-        box-shadow: 0 0 0 0 rgba(255, 157, 0, 0.7);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
     }
     70% {
         transform: scale(1.1);
-        box-shadow: 0 0 0 15px rgba(255, 157, 0, 0);
+        box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
     }
     100% {
         transform: scale(0.95);
-        box-shadow: 0 0 0 0 rgba(255, 157, 0, 0);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
     }
 }
+@keyframes fadeInLabels {
+    to {
+        opacity: 0.85;
+    }
+}
+
 .hero-detail-overlay {
     position: absolute;
     bottom: 0;
