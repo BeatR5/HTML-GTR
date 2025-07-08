@@ -2,8 +2,8 @@
 Hi, I'm Başar – a Computer Engineering student passionate about building clean, modern, and responsive websites.
 I recently developed a lightweight portfolio site using pure HTML and CSS:
 
-🌐 Live Preview
-📂 Source Code
+🌐 Live Preview : https://beatr5.github.io/HTML-GTR/
+📂 Source Code : https://github.com/BeatR5/HTML-GTR
 
 I focus on:
 
