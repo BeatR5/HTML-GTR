@@ -5,23 +5,24 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
  <title>Specs - Nissan Skyline GTR R34</title>
- <meta name="description" content="Detailed technical specifications of the legendary Nissan Skyline GT-R R34 V-spec II, including engine, performance, and design data.">
- <meta property="og:title" content="Specs - Nissan Skyline GTR R34">
- <meta property="og:description" content="Detailed technical specifications of the legendary Nissan Skyline GT-R R34 V-spec II.">
- <meta property="og:image" content="images/r34-hero-parallax.jpg">
- <meta property="og:url" content="YOUR_WEBSITE_URL_HERE/specs.html">
- <meta property="og:type" content="article">
+ <meta name="description" content="Detailed technical specifications of the legendary Nissan Skyline GT-R R34 V-spec II.">
  
  <link rel="icon" href="favicon.ico" type="image/x-icon">
  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+ <div id="preloader">
+    <div class="loader-car"><div class="body"></div><div class="wheels"></div></div>
+ </div>
+
  <header id="main-header">
     <div class="container header-content">
-      <nav>
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+          <span class="hamburger"></span>
+      </button>
+      <nav id="main-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="specs.html" class="active">Specs</a></li>
@@ -82,19 +83,19 @@
 
  <footer>
     <div class="container">
-        <div class="footer-socials">
-            <a href="https://www.instagram.com/basarbaylan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-            </a>
-            <a href="https://github.com/BeatR5" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-            </a>
+        <div class="footer-content">
+            <p>&copy; 2025 Basar's Website. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/basarbaylan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                <a href="https://github.com/BeatR5" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+            </div>
         </div>
-        <p>&copy; 2025 Basar's Website. All rights reserved.</p>
     </div>
  </footer>
 
-  <script src="script.js"></script>
+ <div id="lightbox" class="lightbox"><span class="lightbox-close">&times;</span><img class="lightbox-content" id="lightbox-img"></div>
+ <button id="back-to-top-btn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+ <script src="script.js"></script>
 
 </body>
 </html>
