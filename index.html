@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <title>Nissan Skyline GT-R R34 - The Legend</title>
+ <meta name="description" content="An immersive digital experience celebrating the legacy, design, and cultural impact of the legendary Nissan Skyline GT-R R34.">
+ <meta property="og:title" content="Nissan Skyline GTR R34 - The Legend">
+ <meta property="og:description" content="An immersive digital experience celebrating the legacy, design, and cultural impact of the legendary Nissan Skyline GT-R R34.">
+ <meta property="og:image" content="images/r34-hero-parallax-high-res.jpg">
+ <meta property="og:url" content="https://YOUR_DOMAIN/index.html">
+ <meta property="og:type" content="website">
+
+ <link rel="icon" href="favicon.ico" type="image/x-icon">
+ <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+ <div id="preloader">
+    <div class="loader-car">
+        <div class="body"></div>
+        <div class="wheels"></div>
+    </div>
+ </div>
+
+ <header id="main-header">
+    <div class="container header-content">
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="hamburger"></span>
+      </button>
+      <nav id="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="specs.html">Specs</a></li>
+          <li><a href="legacy.html">Legacy</a></li>
+          <li><a href="culture.html">Cultural Impact</a></li>
+        </ul>
+      </nav>
+    </div>
+ </header>
+
+ <main>
+    <section class="reveal-intro" aria-labelledby="intro-title">
+        <div class="intro-copy">
+            <p class="intro-eyebrow">Interactive Automotive Museum</p>
+            <h1 id="intro-title">Skyline GT-R R34</h1>
+            <p>An interactive cinematic experience.</p>
+            <div class="intro-meta" aria-label="Vehicle highlights">
+                <span>BNR34</span>
+                <span>RB26DETT</span>
+                <span>ATTESA E-TS</span>
+            </div>
+            <button class="intro-cta" type="button" data-scroll-target="#experience-hero">Enter Experience</button>
+        </div>
+
+        <div class="laptop-stage" aria-hidden="true">
+            <div class="laptop-mockup">
+                <div class="laptop-screen">
+                    <div class="laptop-screen-media" data-video-webm="assets/gtr-screen-video.webm" data-video-mp4="assets/gtr-screen-video.mp4" data-poster="assets/gtr-screen-poster.jpg">
+                        <img src="images/r34-hero-parallax-high-res.jpg" alt="">
+                    </div>
+                </div>
+                <div class="laptop-base"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="interactive-hero" id="experience-hero">
+        <div class="hero-image-container">
+            <img src="images/r34-hero-parallax-high-res.jpg" alt="Interactive Nissan Skyline GTR R34" id="interactive-image" fetchpriority="high">
+        </div>
+        
+        <div class="hero-title-overlay">
+            <h1>SKYLINE GT-R <span>R34</span></h1>
+            <p>An Interactive Experience</p>
+            <div class="hero-meta" aria-label="Vehicle highlights">
+                <span>BNR34</span>
+                <span>RB26DETT</span>
+                <span>ATTESA E-TS</span>
+            </div>
+        </div>
+        
+        <button class="hotspot hotspot-engine"
+             type="button"
+             aria-label="Open RB26DETT engine detail"
+             aria-controls="hero-detail-panel"
+             data-detail="engine"
+             style="--x: 36%; --y: 47%; --mobile-x: 41%; --mobile-y: 52%;">
+            <span class="hotspot-pulse" aria-hidden="true"></span>
+            <span class="hotspot-core" aria-hidden="true"></span>
+            <span class="hotspot-label">Engine</span>
+        </button>
+    
+        <button class="hotspot hotspot-interior"
+             type="button"
+             aria-label="Open driver-focused cockpit detail"
+             aria-controls="hero-detail-panel"
+             data-detail="interior"
+             style="--x: 70%; --y: 60%; --mobile-x: 72%; --mobile-y: 54%;">
+            <span class="hotspot-pulse" aria-hidden="true"></span>
+            <span class="hotspot-core" aria-hidden="true"></span>
+            <span class="hotspot-label">Interior</span>
+        </button>
+
+        <div class="hero-detail-overlay" id="hero-detail-panel" role="dialog" aria-modal="true" aria-labelledby="detail-title" aria-hidden="true">
+            <div class="detail-scanline" aria-hidden="true"></div>
+            <div class="detail-content">
+                <button class="detail-close-btn" id="detail-close-btn" type="button" aria-label="Close detail panel">&times;</button>
+                <div class="detail-media">
+                    <img id="detail-image" src="" alt="" loading="lazy">
+                </div>
+                <div class="detail-text">
+                    <p class="detail-eyebrow" id="detail-eyebrow"></p>
+                    <h2 id="detail-title"></h2>
+                    <p id="detail-description"></p>
+                    <div class="detail-chips" id="detail-chips" aria-label="Feature highlights"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-intro animate-on-scroll">
+        <div class="container">
+            <p>The Icon. The Legend. "Godzilla". Discover the car that defined a generation of performance.</p>
+        </div>
+    </section>
+
+    <div class="container home-layout">
+        <div class="main-content">
+          <article class="animate-on-scroll">
+            <h2>The Legend of Godzilla</h2>
+            <p>The Nissan Skyline GT-R R34 is an iconic Japanese sports car revered for its performance and distinctive design. Produced from 1999 to 2002, it is celebrated for its powerful twin-turbo RB26DETT engine, and its advanced all-wheel-drive system, the ATTESA E-TS Pro.</p>
+          </article>
+          <article class="animate-on-scroll">
+            <h2>Unmatched Performance</h2>
+            <p>The GT-R's technology led the Australian motoring magazine *Wheels* to nickname it "Godzilla". In tests, the R34 GT-R covered a quarter-mile in 12.2 seconds and accelerated from 0–100 km/h in a blistering 4.4 seconds, setting a new benchmark for sports cars.</p>
+          </article>
+        </div>
+    
+        <aside class="animate-on-scroll">
+          <h2>The R34's Enduring Legacy</h2>
+          <p>The Nissan Skyline GT-R <span lang="ja">(日産・スカイラインGT-R)</span> is more than just a car; it's a cultural phenomenon.</p>
+          <img src="images/r34-side-view.jpg" alt="Blue R34 GTR Front View" class="lightbox-trigger" loading="lazy">
+        </aside>
+     </div>
+ </main>
+
+ <footer>
+    <div class="container">
+        <div class="footer-content">
+            <p>&copy; 2025 Basar's Website. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/basarbaylan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="https://github.com/BeatR5" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+ </footer>
+
+ <div id="lightbox" class="lightbox">
+     <span class="lightbox-close">&times;</span>
+     <img class="lightbox-content" id="lightbox-img">
+ </div>
+
+ <button id="back-to-top-btn" title="Go to top">
+     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+ </button>
+
+ <script src="script.js"></script>
+
+</body>
+</html>
