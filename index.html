@@ -8,7 +8,7 @@
  <meta name="description" content="An immersive digital experience celebrating the legacy, design, and cultural impact of the legendary Nissan Skyline GT-R R34.">
  <meta property="og:title" content="Nissan Skyline GTR R34 - The Legend">
  <meta property="og:description" content="An immersive digital experience celebrating the legacy, design, and cultural impact of the legendary Nissan Skyline GT-R R34.">
- <meta property="og:image" content="images/r34-herooo-parallax-high-res.jpg">
+ <meta property="og:image" content="images/r34-hero-parallax-high-res.jpg">
  <meta property="og:url" content="https://YOUR_DOMAIN/index.html">
  <meta property="og:type" content="website">
 
@@ -28,10 +28,10 @@
 
  <header id="main-header">
     <div class="container header-content">
-      <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
           <span class="hamburger"></span>
       </button>
-      <nav id="main-nav">
+      <nav id="main-nav" aria-label="Primary navigation">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="specs.html">Specs</a></li>
@@ -43,41 +43,80 @@
  </header>
 
  <main>
-    <section class="interactive-hero">
+    <section class="reveal-intro" aria-labelledby="intro-title">
+        <div class="intro-copy">
+            <p class="intro-eyebrow">Interactive Automotive Museum</p>
+            <h1 id="intro-title">Skyline GT-R R34</h1>
+            <p>An interactive cinematic experience.</p>
+            <div class="intro-meta" aria-label="Vehicle highlights">
+                <span>BNR34</span>
+                <span>RB26DETT</span>
+                <span>ATTESA E-TS</span>
+            </div>
+            <button class="intro-cta" type="button" data-scroll-target="#experience-hero">Enter Experience</button>
+        </div>
+
+        <div class="laptop-stage" aria-hidden="true">
+            <div class="laptop-mockup">
+                <div class="laptop-screen">
+                    <div class="laptop-screen-media" data-video-webm="assets/gtr-screen-video.webm" data-video-mp4="assets/gtr-screen-video.mp4" data-poster="assets/gtr-screen-poster.jpg">
+                        <img src="images/r34-hero-parallax-high-res.jpg" alt="">
+                    </div>
+                </div>
+                <div class="laptop-base"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="interactive-hero" id="experience-hero">
         <div class="hero-image-container">
-            <img src="images/r34-hero-parallax-high-res.jpg" alt="Interactive Nissan Skyline GTR R34" id="interactive-image">
+            <img src="images/r34-hero-parallax-high-res.jpg" alt="Interactive Nissan Skyline GTR R34" id="interactive-image" fetchpriority="high">
         </div>
         
         <div class="hero-title-overlay">
             <h1>SKYLINE GT-R <span>R34</span></h1>
             <p>An Interactive Experience</p>
+            <div class="hero-meta" aria-label="Vehicle highlights">
+                <span>BNR34</span>
+                <span>RB26DETT</span>
+                <span>ATTESA E-TS</span>
+            </div>
         </div>
         
-        <div class="hotspot" 
-             data-image-src="images/engine-view.jpg" 
-             data-title="The RB26DETT Engine"
-             data-description="The heart of Godzilla. A 2.6L twin-turbocharged inline-six engine, legendary for its immense tuning potential and robust cast-iron block, capable of handling over 1000 horsepower."
-             style="top: 55%; left: 33%;">
-            <div class="hotspot-pulse"></div>
-            <div class="hotspot-label">Engine</div>
-        </div>
+        <button class="hotspot hotspot-engine"
+             type="button"
+             aria-label="Open RB26DETT engine detail"
+             aria-controls="hero-detail-panel"
+             data-detail="engine"
+             style="--x: 36%; --y: 47%; --mobile-x: 41%; --mobile-y: 52%;">
+            <span class="hotspot-pulse" aria-hidden="true"></span>
+            <span class="hotspot-core" aria-hidden="true"></span>
+            <span class="hotspot-label">Engine</span>
+        </button>
     
-        <div class="hotspot" 
-             data-image-src="images/interior-view.jpg" 
-             data-title="Driver-Focused Cockpit"
-             data-description="The R34's interior was designed for performance driving, featuring supportive bucket seats and the iconic Multi-Function Display (MFD) which showed live data from the engine and chassis sensors."
-             style="top: 60%; left: 70%;">
-            <div class="hotspot-pulse"></div>
-            <div class="hotspot-label">Interior</div>
-        </div>
+        <button class="hotspot hotspot-interior"
+             type="button"
+             aria-label="Open driver-focused cockpit detail"
+             aria-controls="hero-detail-panel"
+             data-detail="interior"
+             style="--x: 70%; --y: 60%; --mobile-x: 72%; --mobile-y: 54%;">
+            <span class="hotspot-pulse" aria-hidden="true"></span>
+            <span class="hotspot-core" aria-hidden="true"></span>
+            <span class="hotspot-label">Interior</span>
+        </button>
 
-        <div class="hero-detail-overlay" id="hero-detail-panel">
-            <button class="detail-close-btn" id="detail-close-btn">&times;</button>
+        <div class="hero-detail-overlay" id="hero-detail-panel" role="dialog" aria-modal="true" aria-labelledby="detail-title" aria-hidden="true">
+            <div class="detail-scanline" aria-hidden="true"></div>
             <div class="detail-content">
-                <img id="detail-image" src="" alt="">
+                <button class="detail-close-btn" id="detail-close-btn" type="button" aria-label="Close detail panel">&times;</button>
+                <div class="detail-media">
+                    <img id="detail-image" src="" alt="" loading="lazy">
+                </div>
                 <div class="detail-text">
+                    <p class="detail-eyebrow" id="detail-eyebrow"></p>
                     <h2 id="detail-title"></h2>
                     <p id="detail-description"></p>
+                    <div class="detail-chips" id="detail-chips" aria-label="Feature highlights"></div>
                 </div>
             </div>
         </div>
@@ -104,7 +143,7 @@
         <aside class="animate-on-scroll">
           <h2>The R34's Enduring Legacy</h2>
           <p>The Nissan Skyline GT-R <span lang="ja">(日産・スカイラインGT-R)</span> is more than just a car; it's a cultural phenomenon.</p>
-          <img src="images/r34-side-view.jpg" alt="Blue R34 GTR Front View" class="lightbox-trigger">
+          <img src="images/r34-side-view.jpg" alt="Blue R34 GTR Front View" class="lightbox-trigger" loading="lazy">
         </aside>
      </div>
  </main>
